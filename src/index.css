@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --blue-background: linear-gradient(249.29deg, #001A44 44.1%, #002A6C 101.3%);
+  --orange-color: #F36421;
+  --blue-color: #0743A3;
+  --blue-text-color: #073278;
+  --light-background: linear-gradient(0.35deg, #FFF5EF -34.82%, #FFFFFF 183.25%);
+  --subText-color: #E7EDF6;
+  --main-font: "Metrophobic", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 37.5%;
+  }
+}

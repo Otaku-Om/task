@@ -1,0 +1,121 @@
+.Featured-Card {
+   /* border: 3px solid green; */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   box-shadow: 2px 4px 60px 0px #0732781A;
+   width: 100%;
+   max-width: 450px;
+   border-radius: 16px;
+   padding: 2rem;
+   gap: 1.5rem;
+   background-color: #fff;
+}
+
+.Featured-Card-Image {
+   width: 100%;
+}
+
+.Featured-Card-Image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.Featured-Card-Content {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 3rem;
+   width: 100%;
+}
+
+.Featured-Card-Content-Heading {
+   font-family: var(--main-font);
+   font-size: 2.6rem;
+   font-weight: 700;
+   line-height: 32px;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+}
+
+.Featured-Card-Content-Line {
+   width: 100%;
+   background-color: var(--subText-color);
+   height: 1px;
+}
+
+.Featured-Card-Content-Details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.Featured-Card-Content-Detail {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 0.8rem;
+   border-right: 2px solid var(--subText-color);
+   padding-right: 1rem;
+}
+
+.Featured-Card-Content-Detail:last-child {
+   border-right: none;
+}
+
+.Featured-Card-Content-Detail img {
+   width: 18px;
+   height: 18px;
+   object-fit: contain;
+}
+
+.Featured-Card-Content-Detail p {
+   font-family: var(--main-font);
+   font-size: 1.6rem;
+   font-weight: 500;
+   line-height: 18px;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   color: var(--blue-text-color);
+}
+
+.Featured-Card-Content-Btns {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+   width: 100%;
+}
+
+.Featured-Card-Content-Btns button {
+   width: 200px;
+   height: 52px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 12px;
+   font-family: var(--main-font);
+   font-size: 1.6rem;
+   font-weight: 500;
+   line-height: 18px;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   outline: none;
+   border: none;
+}
+
+.Featured-Card-Content-Btns button:first-child {
+   border: 1px solid var(--orange-color);
+   color: var(--orange-color);
+   background-color: #fff;
+}
+
+.Featured-Card-Content-Btns button:last-child {
+   background-color: var(--blue-color);
+   color: #fff;
+}

@@ -1,0 +1,260 @@
+.EdTech {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--light-background);
+   /* margin-top: 50px; */
+}
+
+.EdTech-Container {
+   /* border: 3px solid saddlebrown; */
+   width: 85%;
+}
+
+.EdTech-Container-Content {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   /* padding: 6em 0; */
+   padding-bottom: 6em;
+}
+
+.EdTech-Container-Content-Left {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: flex-start; */
+   align-items: flex-start;
+   gap: 1rem;
+   width: 45%;
+}
+
+.EdTech-Container-Content-Left-Top {
+   width: 100%;
+   height: 457px;
+}
+
+.EdTech-Container-Content-Left-Top img {
+   width: auto;
+   height: 100%;
+   object-fit: cover;
+}
+
+.EdTech-Container-Content-Left-Bottom {
+   /* border: 3px solid green; */
+   margin-top: 3em;
+}
+
+.EdTech-Container-Content-Left-Bottom-Heading {
+   font-family: var(--main-font);
+   font-size: 4.8rem;
+   font-weight: 700;
+   line-height: 5.6rem;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   color: #000;
+
+}
+
+.EdTech-Container-Content-Left-Bottom-Heading-Highlight {
+   color: var(--orange-color);
+}
+
+.EdTech-Container-Content-Left-Bottom-Para {
+   font-family: var(--main-font);
+   font-size: 1.8rem;
+   font-weight: 400;
+   line-height: 2.4rem;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   color:#494949;
+   margin-top: 0.8em;
+}
+
+.EdTech-Container-Content-Left-Bottom button {
+   background-color: var(--orange-color);
+   color: #fff;
+   padding: 1.7rem 1.6rem;
+   height: 52px;
+   width: 200px;
+   text-align: center;
+   outline: none;
+   border: none;
+   border-radius: 72px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   cursor: pointer;
+   margin-top: 3em;
+}
+
+.EdTech-Container-Content-Left-Bottom button .Btn-Content {
+   font-family: var(--main-font);
+   font-size: 1.6rem;
+   line-height: 1.6rem;
+   font-weight: 500;
+   height: 18px;
+}
+
+.EdTech-Container-Content-Left-Bottom button .Btn-Icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 18px;
+   height: 18px;
+}
+
+.EdTech-Container-Content-Left-Bottom button .Btn-Icon svg {
+   font-size: 18px;
+   color: #fff;
+}
+
+.EdTech-Container-Content-Right {
+   /* border: 4px solid plum; */
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: flex-start;
+   gap: 4rem;
+}
+
+.EdTech-Container-Content-Right-Item {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 2rem;
+   padding: 1.8rem 2.5rem;
+   background-color: #fff;
+   width: 400px;
+   border-radius: 25px;
+   box-shadow: 1.42px 2.85px 42.73px 0px #0732781A;
+}
+
+.EdTech-Container-Content-Right-Item-Image {
+   width: 65px;
+   height: 65px;
+}
+
+.EdTech-Container-Content-Right-Item-Image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.EdTech-Container-Content-Right-Item-Content {
+   font-family: var(--main-font);
+   font-size: 1.8rem;
+   font-weight: 700;
+   line-height: 2.8rem;
+   text-align: left;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+   color: #000;
+}
+
+.EdTech-Container-Content-Right-Item:nth-child(2) {
+   transform: translateX(-14%);
+}
+
+.EdTech-Container-Content-Right-Item:nth-child(3) {
+   transform: translateX(-28%);
+}
+.EdTech-Container-Content-Right-Item:nth-child(4) {
+   transform: translateX(-42%);
+}
+
+@media screen and (max-width: 1200px) {
+   .EdTech-Container {
+      /* border: 3px solid saddlebrown; */
+      width: 95%;
+   }
+
+   .EdTech-Container-Content-Right-Item {
+      padding: 1.4rem 2.4rem;
+      background-color: #fff;
+      width: 350px;
+   }
+
+   .EdTech-Container-Content-Right-Item-Image {
+      width: 60px;
+      height: 60px;
+   }
+   .EdTech-Container-Content-Left-Top {
+      height: 380px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .EdTech-Container-Content {
+      flex-direction: column;
+      gap: 6rem;
+   }
+
+   .EdTech-Container-Content-Left {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.2rem;
+   }
+
+   .EdTech-Container-Content-Right {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+      place-items: center;
+   }
+   .EdTech-Container-Content-Right-Item:nth-child(2) {
+      transform: translateX(0%);
+   }
+   
+   .EdTech-Container-Content-Right-Item:nth-child(3) {
+      transform: translateX(0%);
+   }
+   .EdTech-Container-Content-Right-Item:nth-child(4) {
+      transform: translateX(0%);
+   }
+   .EdTech-Container-Content-Right-Item {
+      width: 280px;
+   }
+   
+}
+
+@media screen and (max-width: 600px) {
+   .EdTech-Container-Content-Left {
+      flex-direction: column;
+   }
+   .EdTech-Container-Content-Left-Top {
+      display: flex;
+      justify-content: center;
+      height: 320px;
+   }
+
+   .EdTech-Container-Content-Left-Bottom-Heading {
+      text-align: center;
+   }
+
+   .EdTech-Container-Content-Left-Bottom-Para {
+      text-align: center;
+   }
+
+   .EdTech-Container-Content-Left-Bottom button {
+      height: 42px;
+      margin: 3.5rem auto;
+   }
+
+   .EdTech-Container-Content-Left-Bottom button .Btn-Content {
+      font-size: 2rem;
+      height: 10px;
+   }
+
+   .EdTech-Container-Content-Right {
+      display: flex;
+      flex-direction: column;
+   }
+}
